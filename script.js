@@ -36,6 +36,8 @@ function search_personaje(personaje_name) {
     
     if(personajes[i].name == personaje_name) {
       return personajes[i]
+    }else{
+        containerTarget.innerHTML = '<p style="background-color: #24292F" class=" text-white text-center fs-5 fw-bold">No se encontraron resultados.</p>'
     }
   }
 }
